@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Happy Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Happy<span>Corner</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="registration.html" class="active">Регистрация</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="registration-section">
+        <div class="container">
+            <h1>Регистрация в клубе Happy Corner</h1>
+            <p class="section-description">Зарегистрируйтесь в нашей программе лояльности и получайте эксклюзивные предложения, скидки и приглашения на специальные мероприятия.</p>
+            
+            <div class="registration-form">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">ФИО *</label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="Введите ваше полное имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="example@mail.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="+7 (XXX) XXX-XX-XX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate">Дата рождения</label>
+                        <input type="date" id="birthdate" name="birthdate" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Пароль *</label>
+                        <input type="password" id="password" name="password" class="form-control" required placeholder="Не менее 6 символов">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Подтверждение пароля *</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required placeholder="Повторите пароль">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferences">Предпочтения в напитках</label>
+                        <select id="preferences" name="preferences" class="form-control">
+                            <option value="">Выберите вариант</option>
+                            <option value="beer">Крафтовое пиво</option>
+                            <option value="cocktails">Коктейли</option>
+                            <option value="wine">Вино</option>
+                            <option value="all">Все напитки</option>
+                            <option value="none">Не употребляю алкоголь</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="newsletter" checked>
+                            Получать информацию о новых сортах пива и специальных предложениях
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="terms" required>
+                            Я согласен с <a href="#" style="color: #e6b325;">условиями обработки персональных данных</a> *
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-block">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Happy<span>Corner</span></div>
+                    <p>Крафтовый бар с уникальной атмосферой, где встречаются любители качественного пива, вкусной еды и хорошей музыки.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p>г. Москва, ул. Пивоваров, д. 15</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p>info@happycorner.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Happy Corner. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

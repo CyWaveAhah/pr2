@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Happy Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Happy<span>Corner</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html" class="active">Меню</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <div class="container">
+            <h1>Наше меню</h1>
+            <p class="section-description">В нашем меню вы найдете разнообразные блюда и напитки, приготовленные из свежих ингредиентов. Все блюда готовятся на заказ, поэтому мы гарантируем их свежесть и качество.</p>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Все позиции</button>
+                <button class="category-btn" data-category="beer">Крафтовое пиво</button>
+                <button class="category-btn" data-category="cocktails">Коктейли</button>
+                <button class="category-btn" data-category="food">Закуски и блюда</button>
+            </div>
+            
+            <div class="menu-grid">
+
+                <div class="menu-item" data-category="beer">
+                    <div class="menu-item-img" style="background-image: url('swetliel.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>IPA "Happy Dreams"</h3>
+                        <p>Индийский светлый эль с насыщенным хмелевым вкусом и ароматом цитрусовых. Крепость: 6.5%</p>
+                        <div class="menu-item-price">450 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="beer">
+                    <div class="menu-item-img" style="background-image: url('temnistaut.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Stout "Midnight"</h3>
+                        <p>Темный крепкий стаут с нотами жженого солода, шоколада и кофе. Крепость: 7.2%</p>
+                        <div class="menu-item-price">480 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="beer">
+                    <div class="menu-item-img" style="background-image: url('pshenichnoepivo.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Wheat Beer "Sunny Day"</h3>
+                        <p>Пшеничное нефильтрованное пиво с освежающим вкусом и ароматом банана и гвоздики. Крепость: 5.0%</p>
+                        <div class="menu-item-price">420 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="cocktails">
+                    <div class="menu-item-img" style="background-image: url('kokteylsburbonom.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Old Fashioned</h3>
+                        <p>Классический коктейль на основе бурбона с добавлением биттера, сахара и апельсиновой цедры.</p>
+                        <div class="menu-item-price">650 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="cocktails">
+                    <div class="menu-item-img" style="background-image: url('beliromilaym.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Mojito</h3>
+                        <p>Освежающий коктейль на основе белого рома с лаймом, мятой и сахарным сиропом.</p>
+                        <div class="menu-item-price">550 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="cocktails">
+                    <div class="menu-item-img" style="background-image: url('kokteyljinivermutkrasni.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Negroni</h3>
+                        <p>Итальянский коктейль из джина, красного вермута и кампари, украшенный апельсиновой цедрой.</p>
+                        <div class="menu-item-price">680 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img" style="background-image: url('burger.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Бургер "Happy Classic"</h3>
+                        <p>Классический бургер с говяжьей котлетой, сыром чеддер, салатом, помидором и фирменным соусом.</p>
+                        <div class="menu-item-price">750 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img" style="background-image: url('kartofel.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Картофель фри с трюфельным соусом</h3>
+                        <p>Хрустящий картофель фри с пармезаном и трюфельным соусом.</p>
+                        <div class="menu-item-price">450 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img" style="background-image: url('krilishki.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Куриные крылышки BBQ</h3>
+                        <p>Хрустящие куриные крылышки в соусе барбекю с сельдереем и соусом блючиз.</p>
+                        <div class="menu-item-price">620 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="beer">
+                    <div class="menu-item-img" style="background-image: url('swetlipivo.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Lager "Golden Flow"</h3>
+                        <p>Светлое лагерное пиво с мягким вкусом и легкой горчинкой. Крепость: 4.8%</p>
+                        <div class="menu-item-price">400 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="cocktails">
+                    <div class="menu-item-img" style="background-image: url('tekilaslaymom.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Margarita</h3>
+                        <p>Классический коктейль на основе текилы с лаймовым соком и апельсиновым ликером.</p>
+                        <div class="menu-item-price">600 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img" style="background-image: url('tarelk.jpg')"></div>
+                    <div class="menu-item-content">
+                        <h3>Сырная тарелка</h3>
+                        <p>Ассорти из трех видов сыра, орехов, меда и крекеров.</p>
+                        <div class="menu-item-price">850 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Happy<span>Corner</span></div>
+                    <p>Крафтовый бар с уникальной атмосферой, где встречаются любители качественного пива, вкусной еды и хорошей музыки.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p>г. Москва, ул. Пивоваров, д. 15</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p>info@happycorner.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Happy Corner. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
